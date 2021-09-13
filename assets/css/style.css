@@ -521,7 +521,7 @@ button {
 
 .s1,.s2,.s3,.s4{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
   justify-content: center;
   margin-left: 130px;
