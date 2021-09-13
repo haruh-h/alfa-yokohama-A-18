@@ -7,6 +7,7 @@
   <title>襲われた新国立競技場からの脱出 │ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
 </head>
 <body>
   <svg width="0" height="0" class="hidden">
@@ -17,7 +18,7 @@
   </svg>
   <header class="header">
     <div class="container">
-      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
+      <div class="header__logo"><img src="assets/images/logo.png" alt="チームロゴ"></div>
       <div class="header__name">N・S高生制作サイト</div>
     </div>
   </header>
@@ -37,7 +38,7 @@
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
             <div class="s1">
             <div class="scr">
-            <p class="text-center">まずは、観客を避難させるために必要な最新の新国立競技場の状況図を手に入れるためにサーバーをハッキングしよう。<br>それを入手しようとするとこんな画像が出てきた！ん？数字がたくさん…？</p>
+            <p class="text-center">まずは、観客を避難させるために<br>必要な最新の新国立競技場の状況図を<br>手に入れるためにサーバーをハッキングしよう。<br>それを入手しようとするとこんな画像が出てきた！<br>ん？数字がたくさん…？</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
             </div>
             <div class="exim"><img src="image/bg1.jpg"></img></div>
@@ -144,6 +145,7 @@ Youtube貼り付けここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                  <center><p>答えは漢字になります。</p></center>
                   <!-- STAGE2-1解答入力セクション　ここまで -->
                 </div><!-- /.column -->
                 <!-- STAGE2-1　ここまで -->
@@ -294,12 +296,12 @@ STAGE3-3追加　ここまで -->
         <!-- STAGE4問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>謎の紙</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>ロボットとの戦い</h2>
             <div class="s4">
             <div class="scr">
-            <p class="text-center">その影の正体はオリンピックで爆破テロが起きることを予見していた人間で、<br>自分たちの味方だった！<br>
-              その味方、トミー・C・カーターから、ある情報をもらう。<br>
-              この先にはたくさんのロボットがいる。<br>ロボットを止めるために必要な謎はここに書いてあるのだがその答えがわからない。<br>4つもナゾが書いてある！</p>
+            <p class="text-center">その影の正体はオリンピックで爆破テロが<br>起きることを予見していた人間で、<br>自分たちの味方だった！<br>
+              そのトミー・C・カーターから、ある情報をもらう。<br>
+              この先にはたくさんのロボットがいる。<br>ロボットを止めるために必要な謎は<br>ここに書いてあるのだがその答えがわからない。<br>4つもナゾが書いてある！</p>
           </div>
           <div class="exim"><img src="image/bg4.jpg"></img></div>
           </div>
@@ -312,6 +314,7 @@ STAGE3-3追加　ここまで -->
 
         <!-- STAGE4-1解答入力セクションここから -->
         <div class="notification"><center><p>STAGE4は4つの解答を全て正解にしたときのみ、④の送信ボタンを押してクリアできます。</p></center></div>
+        <div class="notification"><center><p>数字は半角で、カタカナは全角で入力してください。</p></center></div>
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：4-①</span>答えを入力</h2>
@@ -334,29 +337,23 @@ STAGE3-3追加　ここまで -->
           </div>
         </section>
     　<!--STAGE4-2解答入力セクション　ここまで-->　
-
       <!--STAGE4-3解答入力セクション　ここから-->
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：4-③</span>キーワードを入力</h2>
-
             <answer-input v-bind:correct="correctAnswer['stage4']['q3']" v-on:answer-input="answerInput($event, 'stage4', 3)"></answer-input>
             <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
           </div>
         </section>
-
     <!--STAGE4-3解答セクション　ここまで -->
-
     <!--STAGE4-4解答入力セクション　ここから-->
           <section class="section bg-color--keycolor">
             <div class="container">
               <h2 class="section-title"><span class="section-title__stage">STAGE：4-④</span>キーワードを入力</h2>
-  
               <answer-input v-bind:correct="correctAnswer['stage4']['q4']" v-on:answer-input="answerInput($event, 'stage4', 4, 'final')"></answer-input>
               <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
             </div>
           </section>
-  
       <!--STAGE4-4解答セクション　ここまで -->
   
 

@@ -524,6 +524,6 @@ button {
   grid-template-columns: 3fr 1fr;
   gap: 20px;
   justify-content: center;
-  margin-left: 130px;
-  width: 80%;
+/* margin-left: 80px;*/
+  width: 100%;
 }
