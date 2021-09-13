@@ -18,17 +18,23 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: '1964',
         },
         stage2: {
-          q1: 'いいい',
-          // q2: 'えええ',
-          // q3: 'おおお'
+          q1: '非常口',
+          // q2: 'ooo',
+          // q3: 'kakaka'
         },
         stage3: {
-          q1: 'ううう',
-          // q2: 'かかか',
-          // q3: 'ききき',
+          q1: 'olympic',
+          // q2: 'kikiki',
+          // q3: 'kukuku',
+        },
+        stage4: {
+          q1: '2',
+          q2: '0',
+          q3: '2',
+          q4: '4',
         }
       },
 
@@ -48,6 +54,12 @@ const app = Vue.createApp({
           false, // 3-1
           // false, // 3-2
           // false, // 3-3
+        ],
+        stage4: [
+          false, // 4-1
+          false, // 4-2
+          false, // 4-3
+          false, // 4-4
         ]
       },
 
@@ -56,6 +68,7 @@ const app = Vue.createApp({
         stage1: false,
         stage2: false,
         stage3: false,
+        stage4: false,
       },
 
       /* 次のステージを表示するかどうか
@@ -64,6 +77,7 @@ const app = Vue.createApp({
       next: {
         stage1: false,
         stage2: false,
+        stage3: false,
       },
     }
   },
@@ -100,7 +114,7 @@ app.component('answer-input', {
     return {
       /* 送信ボタン上下に表示されるメッセージ */
       okMessage: '正解！',
-      ngMessage: 'そのキーワードは違うようだぞ！？',
+      ngMessage: '残念！もう少し考えてみよう！',
       message: '',
       inputAnswer: '',
     }

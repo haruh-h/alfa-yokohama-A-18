@@ -88,7 +88,7 @@ button {
 * Layout
 *******************/
 .section {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -510,3 +510,20 @@ button {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
+
+.image__container{
+  margin-left: 240px;
+  width: 55%;
+  height: fit-content;
+  justify-content: center;
+  border: 1px solid #000000;
+}
+
+.s1,.s2,.s3,.s4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  margin-left: 130px;
+  width: 80%;
+}
